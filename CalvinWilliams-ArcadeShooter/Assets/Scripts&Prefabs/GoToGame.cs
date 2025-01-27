@@ -6,11 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class GoToGame : MonoBehaviour
 {
-    Button startButton;
+    public Button startButton;
     // Start is called before the first frame update
     void Start()
     {
-        startButton = GetComponent<Button>();
+        startButton.onClick.AddListener(TaskOnClick);
     }
 
     // Update is called once per frame
@@ -19,8 +19,9 @@ public class GoToGame : MonoBehaviour
 
     }
 
-    private void OnMouseUpAsButton()
+    private void TaskOnClick()
     {
+        Debug.Log("HI");
         SceneManager.LoadScene("MainScene");
     }
 }

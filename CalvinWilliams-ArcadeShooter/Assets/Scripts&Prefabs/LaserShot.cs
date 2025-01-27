@@ -5,6 +5,8 @@ using UnityEngine;
 public class LaserShot : MonoBehaviour
 {
     Rigidbody2D rb;
+    public AudioSource destroySound;
+    public AudioSource laserShot;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,9 +20,11 @@ public class LaserShot : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Asteroid"))
+        if (collision.gameObject.CompareTag("Asteroid"))
         {
+            
             Destroy(gameObject);
+            destroySound.Play();
         }
         if (collision.CompareTag("Barrier"))
         {

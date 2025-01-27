@@ -15,7 +15,7 @@ public class AsteroidBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        speed += (Time.deltaTime * -0.02f);
+        speed += (Time.deltaTime * -0.1f);
         rb.velocity = new Vector2(0, speed);
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -27,6 +27,7 @@ public class AsteroidBehavior : MonoBehaviour
         if (collision.CompareTag("Laser"))
         {
             transform.position = new Vector2(transform.position.x, transform.position.y + 30);
+            GunshipMovement.score += 1;
         }
     }
 }
