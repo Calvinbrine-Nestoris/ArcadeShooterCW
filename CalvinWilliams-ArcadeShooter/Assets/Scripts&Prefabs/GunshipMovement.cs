@@ -10,12 +10,13 @@ public class GunshipMovement : MonoBehaviour
     public GameObject projectile;
     float speed = 0f;
     float reset = 1f;
-    public static int score;
+    public static int score = 0;
     
     
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        score = 0;
         
     }
 

@@ -22,9 +22,7 @@ public class LaserShot : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Asteroid"))
         {
-            
             Destroy(gameObject);
-            destroySound.Play();
         }
         if (collision.CompareTag("Barrier"))
         {
