@@ -1,4 +1,4 @@
-Library: E:\Unity\ArcadeShooterCW-main\CalvinWilliams-ArcadeShooter\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
+Library: C:\Users\calvin.williams\Documents\GitHub\ArcadeShooterCW\CalvinWilliams-ArcadeShooter\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
 --platform=Windows
 --backend=burst-llvm-16
 --target=X64_SSE2
@@ -51,10 +51,10 @@ Library: E:\Unity\ArcadeShooterCW-main\CalvinWilliams-ArcadeShooter\Temp\BurstOu
 --assembly-defines=mscorlib;
 --linker-options=PdbAltPath="CalvinWilliams-ArcadeShooter_Data/Plugins/x86_64/lib_burst_generated.pdb"
 --generate-link-xml=Temp\burst.link.xml
---temp-folder=E:\Unity\ArcadeShooterCW-main\CalvinWilliams-ArcadeShooter\Temp\Burst
---key-folder=C:/Program Files/Unity/Hub/Editor/2022.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport
---decode-folder=E:\Unity\ArcadeShooterCW-main\CalvinWilliams-ArcadeShooter\Library\Burst
---output=E:\Unity\ArcadeShooterCW-main\CalvinWilliams-ArcadeShooter\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
+--temp-folder=C:\Users\calvin.williams\Documents\GitHub\ArcadeShooterCW\CalvinWilliams-ArcadeShooter\Temp\Burst
+--key-folder=C:/Program Files/Unity 2022.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport
+--decode-folder=C:\Users\calvin.williams\Documents\GitHub\ArcadeShooterCW\CalvinWilliams-ArcadeShooter\Library\Burst
+--output=C:\Users\calvin.williams\Documents\GitHub\ArcadeShooterCW\CalvinWilliams-ArcadeShooter\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
 
 --method=Unity.Burst.BurstCompiler+BurstCompilerHelper, Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::IsBurstEnabled()--8c2be93e18276203cbd918daa2748a10
@@ -140,10 +140,10 @@ Library: E:\Unity\ArcadeShooterCW-main\CalvinWilliams-ArcadeShooter\Temp\BurstOu
 --assembly-defines=mscorlib;
 --linker-options=PdbAltPath="CalvinWilliams-ArcadeShooter_Data/Plugins/x86_64/lib_burst_generated.pdb"
 --generate-link-xml=Temp\burst.link.xml
---temp-folder=E:\Unity\ArcadeShooterCW-main\CalvinWilliams-ArcadeShooter\Temp\Burst
---key-folder=C:/Program Files/Unity/Hub/Editor/2022.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport
---decode-folder=E:\Unity\ArcadeShooterCW-main\CalvinWilliams-ArcadeShooter\Library\Burst
---output=E:\Unity\ArcadeShooterCW-main\CalvinWilliams-ArcadeShooter\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
+--temp-folder=C:\Users\calvin.williams\Documents\GitHub\ArcadeShooterCW\CalvinWilliams-ArcadeShooter\Temp\Burst
+--key-folder=C:/Program Files/Unity 2022.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport
+--decode-folder=C:\Users\calvin.williams\Documents\GitHub\ArcadeShooterCW\CalvinWilliams-ArcadeShooter\Library\Burst
+--output=C:\Users\calvin.williams\Documents\GitHub\ArcadeShooterCW\CalvinWilliams-ArcadeShooter\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
 
 --method=Unity.Burst.BurstCompiler+BurstCompilerHelper, Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::IsBurstEnabled()--8c2be93e18276203cbd918daa2748a10
