@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class AsteroidBehavior : MonoBehaviour
 {
+    public AudioClip asteroidDestroy;
     Rigidbody2D rb;
     public float speed = -1f;
     // Start is called before the first frame update
     void Start()
     {
+        asteroidDestroy = GetComponent<AudioClip>();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -26,8 +28,9 @@ public class AsteroidBehavior : MonoBehaviour
         }
         if (collision.CompareTag("Laser"))
         {
-            transform.position = new Vector2(transform.position.x, transform.position.y + 30);
             GunshipMovement.score += 1;
+            GetComponent<AudioSource>().Play();
+            transform.position = new Vector2(transform.position.x, transform.position.y + 30);
         }
     }
 }

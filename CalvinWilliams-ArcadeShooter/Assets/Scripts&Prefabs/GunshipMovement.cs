@@ -11,10 +11,13 @@ public class GunshipMovement : MonoBehaviour
     float speed = 0f;
     float reset = 1f;
     public static int score = 0;
-    
+    public AudioClip kaboom;
+    public double deathTime = 2;
+    bool death = false;
     
     void Start()
     {
+        kaboom = GetComponent<AudioClip>();
         rb = GetComponent<Rigidbody2D>();
         score = 0;
         
@@ -48,14 +51,25 @@ public class GunshipMovement : MonoBehaviour
         }
         if (reset < 1)
         {
+            
             reset += Time.deltaTime;
+        }
+        if (death == true)
+        {
+            deathTime -= Time.deltaTime;
+        }
+        if (deathTime <= 0)
+        {
+            SceneManager.LoadScene("TitleScreen");
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Asteroid"))
+        if (collision.gameObject.CompareTag("Asteroid"))
         {
-            SceneManager.LoadScene("TitleScreen");
+            Destroy(collision.gameObject);
+            GetComponent<AudioSource>().Play();
+            death = true;
         }
 
     }
